@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:drools="http://www.jboss.org/drools" id="_CHfpMO8nEemYI6xzLfyvmA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="1.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="__625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__625D6404-908D-4363-B37C-7542001BB52B_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__843AB31F-4ABF-49C2-926B-5F27D7FEC231_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__5E546B54-1E79-4684-A777-15CDB1C66E8C_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__B6881FDA-B248-46AF-8EB9-7872A8C6275F_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__C8105B17-F866-4882-AF2B-28F1C277F193_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_ConditionInputXItem" structureRef="String"/>
+  <bpmn2:process id="ProcessingEngine.Workflow" drools:adHoc="true" drools:packageName="com.myspace.processingengine" drools:version="1.0" name="CreditDisputeWorkflow" isExecutable="true">
+    <bpmn2:extensionElements>
+      <drools:metaData name="customSLADueDate">
+        <drools:metaValue><![CDATA[3s]]></drools:metaValue>
+      </drools:metaData>
+    </bpmn2:extensionElements>
+    <bpmn2:task id="_625D6404-908D-4363-B37C-7542001BB52B" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Submitted">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Submitted]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="customAutoStart">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHfpMe8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputX" drools:dtype="String" itemSubjectRef="__625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_625D6404-908D-4363-B37C-7542001BB52B_ConditionInputX" drools:dtype="String" itemSubjectRef="__625D6404-908D-4363-B37C-7542001BB52B_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHfpMu8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_625D6404-908D-4363-B37C-7542001BB52B_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHfpM-8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHfpNO8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHfpNe8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHfpNu8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHfpN-8nEemYI6xzLfyvmA">_625D6404-908D-4363-B37C-7542001BB52B_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Merchant Info Needed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Merchant Info Needed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHfpOO8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputX" drools:dtype="String" itemSubjectRef="__9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_ConditionInputX" drools:dtype="String" itemSubjectRef="__9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHfpOe8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHfpOu8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHfpO-8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQQO8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQQe8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQQu8nEemYI6xzLfyvmA">_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_843AB31F-4ABF-49C2-926B-5F27D7FEC231" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Resolved">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Resolved]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQQ-8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputX" drools:dtype="String" itemSubjectRef="__843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_843AB31F-4ABF-49C2-926B-5F27D7FEC231_ConditionInputX" drools:dtype="String" itemSubjectRef="__843AB31F-4ABF-49C2-926B-5F27D7FEC231_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQRO8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_843AB31F-4ABF-49C2-926B-5F27D7FEC231_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQRe8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQRu8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQR-8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQSO8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQSe8nEemYI6xzLfyvmA">_843AB31F-4ABF-49C2-926B-5F27D7FEC231_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_5E546B54-1E79-4684-A777-15CDB1C66E8C" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Customer Info Needed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Customer Info Needed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQSu8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputX" drools:dtype="String" itemSubjectRef="__5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_5E546B54-1E79-4684-A777-15CDB1C66E8C_ConditionInputX" drools:dtype="String" itemSubjectRef="__5E546B54-1E79-4684-A777-15CDB1C66E8C_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQS-8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_5E546B54-1E79-4684-A777-15CDB1C66E8C_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQTO8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQTe8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQTu8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQT-8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQUO8nEemYI6xzLfyvmA">_5E546B54-1E79-4684-A777-15CDB1C66E8C_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_B6881FDA-B248-46AF-8EB9-7872A8C6275F" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Create Customer Notified">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Create Customer Notified]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQUe8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputX" drools:dtype="String" itemSubjectRef="__B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_B6881FDA-B248-46AF-8EB9-7872A8C6275F_ConditionInputX" drools:dtype="String" itemSubjectRef="__B6881FDA-B248-46AF-8EB9-7872A8C6275F_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQUu8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_B6881FDA-B248-46AF-8EB9-7872A8C6275F_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQU-8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQVO8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQVe8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQVu8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQV-8nEemYI6xzLfyvmA">_B6881FDA-B248-46AF-8EB9-7872A8C6275F_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_C8105B17-F866-4882-AF2B-28F1C277F193" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Reg Z Calculated">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Reg Z Calculated]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQWO8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputX" drools:dtype="String" itemSubjectRef="__C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_C8105B17-F866-4882-AF2B-28F1C277F193_ConditionInputX" drools:dtype="String" itemSubjectRef="__C8105B17-F866-4882-AF2B-28F1C277F193_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQWe8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_C8105B17-F866-4882-AF2B-28F1C277F193_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQWu8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQW-8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQXO8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQXe8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQXu8nEemYI6xzLfyvmA">_C8105B17-F866-4882-AF2B-28F1C277F193_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Info Needed Customer Notified">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Info Needed Customer Notified]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQX-8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputX" drools:dtype="String" itemSubjectRef="__301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_ConditionInputX" drools:dtype="String" itemSubjectRef="__301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQYO8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQYe8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQYu8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQY-8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQZO8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQZe8nEemYI6xzLfyvmA">_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7" drools:selectable="true" drools:taskName="Milestone" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Credit Card Dispute Info Needed Merchant Notified">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Credit Card Dispute Info Needed Merchant Notified]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:ioSpecification id="_CHgQZu8nEemYI6xzLfyvmA">
+        <bpmn2:dataInput id="_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputX" drools:dtype="String" itemSubjectRef="__5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_ConditionInputX" drools:dtype="String" itemSubjectRef="__5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_ConditionInputXItem" name="Condition"/>
+        <bpmn2:inputSet id="_CHgQZ-8nEemYI6xzLfyvmA">
+          <bpmn2:dataInputRefs>_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_ConditionInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_CHgQaO8nEemYI6xzLfyvmA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_CHgQae8nEemYI6xzLfyvmA">
+        <bpmn2:targetRef>_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_CHgQau8nEemYI6xzLfyvmA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_CHgQa-8nEemYI6xzLfyvmA"><![CDATA[Milestone]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_CHgQbO8nEemYI6xzLfyvmA">_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_CHgQbe8nEemYI6xzLfyvmA">
+    <bpmndi:BPMNPlane id="_CHgQbu8nEemYI6xzLfyvmA" bpmnElement="ProcessingEngine.Workflow">
+      <bpmndi:BPMNShape id="_CHgQb-8nEemYI6xzLfyvmA" bpmnElement="_625D6404-908D-4363-B37C-7542001BB52B">
+        <dc:Bounds height="98.0" width="150.0" x="30.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQcO8nEemYI6xzLfyvmA" bpmnElement="_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D">
+        <dc:Bounds height="102.0" width="154.0" x="390.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQce8nEemYI6xzLfyvmA" bpmnElement="_843AB31F-4ABF-49C2-926B-5F27D7FEC231">
+        <dc:Bounds height="102.0" width="154.0" x="570.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQcu8nEemYI6xzLfyvmA" bpmnElement="_5E546B54-1E79-4684-A777-15CDB1C66E8C">
+        <dc:Bounds height="102.0" width="154.0" x="210.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQc-8nEemYI6xzLfyvmA" bpmnElement="_B6881FDA-B248-46AF-8EB9-7872A8C6275F">
+        <dc:Bounds height="102.0" width="154.0" x="30.0" y="195.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQdO8nEemYI6xzLfyvmA" bpmnElement="_C8105B17-F866-4882-AF2B-28F1C277F193">
+        <dc:Bounds height="102.0" width="154.0" x="210.0" y="195.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQde8nEemYI6xzLfyvmA" bpmnElement="_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8">
+        <dc:Bounds height="102.0" width="154.0" x="390.0" y="195.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_CHgQdu8nEemYI6xzLfyvmA" bpmnElement="_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7">
+        <dc:Bounds height="102.0" width="154.0" x="570.0" y="195.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_CHgQd-8nEemYI6xzLfyvmA" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="ms"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C8105B17-F866-4882-AF2B-28F1C277F193" id="_CHgQeO8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9BA3ECA0-8B53-4E1F-96F3-76A5BAB0706D" id="_CHgQee8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_301C7F4D-EFB0-4BDE-83AF-AD67A64980A8" id="_CHgQeu8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5D5722F0-C4A8-41C0-B5A7-FD8575EF19A7" id="_CHgQe-8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_625D6404-908D-4363-B37C-7542001BB52B" id="_CHgQfO8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B6881FDA-B248-46AF-8EB9-7872A8C6275F" id="_CHgQfe8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5E546B54-1E79-4684-A777-15CDB1C66E8C" id="_CHgQfu8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_843AB31F-4ABF-49C2-926B-5F27D7FEC231" id="_CHgQf-8nEemYI6xzLfyvmA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_CHfpMO8nEemYI6xzLfyvmA</bpmn2:source>
+    <bpmn2:target>_CHfpMO8nEemYI6xzLfyvmA</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>
